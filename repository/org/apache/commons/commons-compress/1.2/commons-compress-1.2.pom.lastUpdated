@@ -1,0 +1,12 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:31:58 BST 2015
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384677949
+https\://maven-repository.com/.error=Could not transfer artifact org.apache.commons\:commons-compress\:pom\:1.2 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437384697990
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.commons\:commons-compress\:pom\:1.2 from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437384708164
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.apache.commons\:commons-compress\:pom\:1.2 from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.commons\:commons-compress\:pom\:1.2 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.commons\:commons-compress\:pom\:1.2 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437384718173
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437384687957

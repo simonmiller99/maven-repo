@@ -1,0 +1,25 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 11:57:36 BST 2015
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84\:84>@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436524426481
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436524976590
+ae79032c979611d618aa47b50cdc1d68530511a1@proxy-de.glb.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436525303896
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.error=Could not transfer artifact org.apache.maven.plugins\:maven-clean-plugin\:pom\:2.5 from/to repo1 (http\://10.22.98.45\:8080/nexus/content/repositories/public/)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+http\://maven.repository.redhat.com/techpreview/all/.error=
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84\:84>@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436524426508
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84\:84>@default-jboss-earlyaccess-plugin-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436524426498
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436524976568
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436524976612
+http\://10.22.98.45\:8080/nexus/content/repositories/central/.error=Could not transfer artifact org.apache.maven.plugins\:maven-clean-plugin\:pom\:2.5 from/to ATOS (http\://10.22.98.45\:8080/nexus/content/repositories/central/)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436524426525
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436525197503
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436525156812
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-ibiblio.org-http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1436525686721
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-clean-plugin\:pom\:2.5 from/to ibiblio.org (http\://mirrors.ibiblio.org/pub/mirrors/maven2)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-apac.my-it-solutions.net\:84>@default-ibiblio.org-http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1436525427866
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-fr.glb.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436525157420
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-repo1-http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436525856233
+ae79032c979611d618aa47b50cdc1d68530511a1@proxy-de.glb.my-it-solutions.net\:84>@default-ibiblio.org-http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1436525341812
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436525157061
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-jboss-earlyaccess-plugin-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436524976583
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84>@default-ibiblio.org-http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1436525373954

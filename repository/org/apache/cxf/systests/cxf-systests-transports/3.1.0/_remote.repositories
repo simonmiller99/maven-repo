@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:47:46 BST 2015
+cxf-systests-transports-3.1.0-tests.jar>=
+cxf-systests-transports-3.1.0.pom>=
+cxf-systests-transports-3.1.0.jar>=

@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri May 29 20:42:24 BST 2015
+depends-maven-plugin-1.2.pom>central=
+depends-maven-plugin-1.2.jar>central=

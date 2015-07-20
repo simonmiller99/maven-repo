@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:33:38 BST 2015
+cxf-wadl2java-plugin-3.1.0.jar>=
+cxf-wadl2java-plugin-3.1.0.pom>=

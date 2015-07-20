@@ -1,0 +1,26 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:26:02 BST 2015
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to mapfishrepository (http\://dev.mapfish.org/maven/repository)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1437384348096
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1437384332734
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437384209168
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.restlet.com/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to mvnrestletcom (http\://maven.restlet.com/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437383396624
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1437384327454
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1437384346641
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437383938958
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384338161
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437383667029
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437383126446
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437384349490
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1437384343690
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to mvnrepositoryrepository (http\://mvnrepository.com/artifact/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+https\://repo1.maven.org/maven2/.lastUpdated=1437384362867
+https\://maven-repository.com/.error=Could not transfer artifact org.mockito\:mockito-all\:jar\:1.10.8 from/to maven-repository.com (https\://maven-repository.com)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1437384345163

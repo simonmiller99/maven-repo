@@ -1,0 +1,37 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:20:23 BST 2015
+@127.0.0.1\:3128>@default-jboss-releases-http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436882315513
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436944821585
+@127.0.0.1\:3128>@default-restlet.org-http\://maven.restlet.org/.lastUpdated=1436883072165
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://maven-repository.com/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to maven-repository.com (https\://maven-repository.com)\: Failed to transfer file\: https\://maven-repository.com/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+@127.0.0.1\:3128>@default-mapfish-repository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436882777883
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to mvnrepository-repository (http\://mvnrepository.com/artifact/)\: Failed to transfer file\: http\://mvnrepository.com/artifact/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436944822405
+@127.0.0.1\:3128>@default-jboss-earlyaccess-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436882441635
+@127.0.0.1\:3128>@default-JBoss\ repository-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1436882735848
+@127.0.0.1\:3128>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1436882567706
+@127.0.0.1\:3128>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436882651781
+@127.0.0.1\:3128>@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436882609745
+https\://repository.jboss.org/nexus/content/repositories/deprecated/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to jboss-deprecated (https\://repository.jboss.org/nexus/content/repositories/deprecated/)\: Failed to transfer file\: https\://repository.jboss.org/nexus/content/repositories/deprecated/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://maven.restlet.org/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to restlet.org (http\://maven.restlet.org)\: Failed to transfer file\: http\://maven.restlet.org/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+@127.0.0.1\:3128>@default-jboss-snapshots-repository-http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436882357549
+@127.0.0.1\:3128>@default-http\://maven.restlet.com/-http\://maven.restlet.com/.lastUpdated=1436882819928
+http\://snapshots.repository.codehaus.org/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to codehaus.m2.snapshots (http\://snapshots.repository.codehaus.org)\: Failed to transfer file\: http\://snapshots.repository.codehaus.org/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+@127.0.0.1\:3128>@default-codehaus.m2.snapshots-http\://snapshots.repository.codehaus.org/.lastUpdated=1436882988071
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+@127.0.0.1\:3128>@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436882693816
+@127.0.0.1\:3128>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436882483663
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436944822018
+@127.0.0.1\:3128>@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436882399591
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436944823295
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to jboss-public-repository-group (https\://repository.jboss.org/nexus/content/groups/public/)\: Failed to transfer file\: https\://repository.jboss.org/nexus/content/groups/public/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+@127.0.0.1\:3128>@default-jboss-deprecated-https\://repository.jboss.org/nexus/content/repositories/deprecated/.lastUpdated=1436883030116
+@127.0.0.1\:3128>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1436882525694
+@127.0.0.1\:3128>@default-jboss-public-repository-group-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1436882903994
+@127.0.0.1\:3128>@default-jboss-enterprise-repository-group-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436882946036
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to mapfish-repository (http\://dev.mapfish.org/maven/repository)\: Failed to transfer file\: http\://dev.mapfish.org/maven/repository/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to central (https\://repo1.maven.org/maven2)\: Failed to transfer file\: https\://repo1.maven.org/maven2/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.
+@127.0.0.1\:3128>@default-mvnrepository-repository-http\://mvnrepository.com/artifact/.lastUpdated=1436882861952
+http\://maven.restlet.com/.error=Could not transfer artifact org.restlet\:org.restlet\:pom\:1.1.10 from/to http\://maven.restlet.com/ (http\://maven.restlet.com/)\: Failed to transfer file\: http\://maven.restlet.com/org/restlet/org.restlet/1.1.10/org.restlet-1.1.10.pom. Return code is\: 502 , ReasonPhrase\:Parent proxy unreacheable.

@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jul 14 08:49:14 BST 2015
+@default-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1433321679474
+https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1436860154888
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436860151440
+@default-https\://repo.maven.apache.org/maven2/.lastUpdated=1433321722001
+@default-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1433321700499
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.jboss.spec\:jboss-javaee-6.0\:pom\:3.0.2.Final from/to central (https\://repo.maven.apache.org/maven2)\: Connect to repo.maven.apache.org\:443 [repo.maven.apache.org/185.31.19.215] failed\: Connection timed out\: connect
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436860151955
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

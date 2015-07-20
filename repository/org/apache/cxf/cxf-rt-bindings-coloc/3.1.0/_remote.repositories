@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:26:58 BST 2015
+cxf-rt-bindings-coloc-3.1.0.jar>=
+cxf-rt-bindings-coloc-3.1.0.pom>=

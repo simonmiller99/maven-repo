@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 18:13:10 BST 2015
+cxf-systests-java2ws-3.1.0.jar>=
+cxf-systests-java2ws-3.1.0-test.wsdl>=
+cxf-systests-java2ws-3.1.0.pom>=

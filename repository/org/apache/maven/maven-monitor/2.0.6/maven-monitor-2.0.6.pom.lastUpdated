@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 10:16:16 BST 2015
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-repo1-http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436519776736
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436518958585
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.error=Could not transfer artifact org.apache.maven\:maven-monitor\:pom\:2.0.6 from/to repo1 (http\://10.22.98.45\:8080/nexus/content/repositories/public/)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436518957821
+http\://maven.repository.redhat.com/techpreview/all/.error=

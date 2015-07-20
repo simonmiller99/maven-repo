@@ -1,0 +1,23 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jul 09 16:04:09 BST 2015
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to jboss-releases (http\://repository.jboss.org/nexus/content/repositories/releases)\: Connect to repository.jboss.org\:80 [repository.jboss.org/209.132.182.33] failed\: Connection timed out\: connect
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to mapfish-repository (http\://dev.mapfish.org/maven/repository)\: Connect to dev.mapfish.org\:80 [dev.mapfish.org/128.179.66.73] failed\: Connection timed out\: connect
+@default-jboss-earlyaccess-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436454122583
+https\://repo.maven.apache.org/maven2/.lastUpdated=1432920136323
+https\://build.shibboleth.net/nexus/content/groups/public/.lastUpdated=1432920135242
+@default-mapfish-repository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436454143641
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to jboss-snapshots-repository (http\://repository.jboss.org/nexus/content/repositories/snapshots/)\: Connect to repository.jboss.org\:80 [repository.jboss.org/209.132.182.33] failed\: Connection timed out\: connect
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/104.66.106.206] failed\: Connection timed out\: connect
+http\://maven.restlet.com/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to http\://maven.restlet.com/ (http\://maven.restlet.com/)\: Connect to maven.restlet.com\:80 [maven.restlet.com/52.5.85.131, maven.restlet.com/52.4.27.2] failed\: Connection timed out\: connect
+@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436454101534
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436454248904
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436454249458
+https\://build.shibboleth.net/nexus/content/groups/public/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to jboss-earlyaccess-repository (http\://maven.repository.redhat.com/earlyaccess/all/)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/104.66.106.206] failed\: Connection timed out\: connect
+@default-mvnrepository-repository-http\://mvnrepository.com/artifact/.lastUpdated=1436454206800
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436454227854
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to mvnrepository-repository (http\://mvnrepository.com/artifact/)\: Connect to mvnrepository.com\:80 [mvnrepository.com/54.84.118.213] failed\: Connection timed out\: connect
+https\://maven-repository.com/.error=Could not transfer artifact commons-logging\:commons-logging\:jar\:1.2 from/to maven-repository.com (https\://maven-repository.com)\: Connect to maven-repository.com\:443 [maven-repository.com/46.4.30.233] failed\: Connection timed out\: connect
+@default-http\://maven.restlet.com/-http\://maven.restlet.com/.lastUpdated=1436454185719
+@default-jboss-releases-http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436454059377
+@default-jboss-snapshots-repository-http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436454080412

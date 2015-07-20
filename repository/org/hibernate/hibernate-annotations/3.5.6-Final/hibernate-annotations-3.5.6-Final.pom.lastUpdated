@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 14:39:50 BST 2015
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436535590701
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436535580682
+https\://maven-repository.com/.error=Could not transfer artifact org.hibernate\:hibernate-annotations\:pom\:3.5.6-Final from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436529513352
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.hibernate\:hibernate-annotations\:pom\:3.5.6-Final from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436535570664
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.hibernate\:hibernate-annotations\:pom\:3.5.6-Final from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out

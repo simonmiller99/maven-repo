@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:26:55 BST 2015
+hamcrest-core-1.1.pom>central=
+hamcrest-core-1.1.jar>jboss-earlyaccess-plugin-repository=
+hamcrest-core-1.1.jar>jboss-earlyaccess-repository=

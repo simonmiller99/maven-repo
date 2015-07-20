@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 09:25:55 BST 2015
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436948755025
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436948744902
+https\://maven-repository.com/.error=Could not transfer artifact org.jboss.spec.javax.ejb\:jboss-ejb-api_3.1_spec\:pom\:1.0.2.Final from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.jboss.spec.javax.ejb\:jboss-ejb-api_3.1_spec\:pom\:1.0.2.Final from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436948734887
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.jboss.spec.javax.ejb\:jboss-ejb-api_3.1_spec\:pom\:1.0.2.Final from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out

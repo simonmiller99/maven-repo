@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jun 18 11:43:32 BST 2015
+@default-http\://dt1devsvn001\:8080/archiva/repository/internal/.lastUpdated=1434624212089
+http\://dt1devsvn001\:8080/archiva/repository/internal/.error=Could not transfer artifact org.apache.maven.plugins\:maven-surefire-plugin\:jar\:2.5 from/to central (http\://dt1devsvn001\:8080/archiva/repository/internal/)\: dt1devsvn001

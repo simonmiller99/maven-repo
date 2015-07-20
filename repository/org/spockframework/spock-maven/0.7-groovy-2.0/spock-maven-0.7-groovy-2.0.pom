@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.spockframework</groupId>
+  <artifactId>spock-maven</artifactId>
+  <version>0.7-groovy-2.0</version>
+  <name>Spock Framework - Maven Module</name>
+  <description>Spock's Maven Module provides some advanced features when executing Spock specifications with Maven 2. This module is purely optional; Maven 2/3 will execute Spock specifications just fine without it.</description>
+  <url>http://spockframework.org</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>pniederw</id>
+      <name>Peter Niederwieser</name>
+      <email>pniederw@gmail.com</email>
+    </developer>
+    <developer>
+      <id>ldaley</id>
+      <name>Luke Daley</name>
+      <email>ld@ldaley.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/spockframework/spock.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/spockframework/spock.git</developerConnection>
+    <url>http://github.spockframework.org/spock</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-utils</artifactId>
+      <version>1.5.7</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>4.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+      <version>2.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spockframework</groupId>
+      <artifactId>spock-core</artifactId>
+      <version>0.7-groovy-2.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.surefire</groupId>
+      <artifactId>surefire-junit47</artifactId>
+      <version>2.11</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-core</artifactId>
+      <version>2.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

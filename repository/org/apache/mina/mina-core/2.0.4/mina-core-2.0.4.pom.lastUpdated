@@ -1,0 +1,17 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:58:46 BST 2015
+https\://maven-repository.com/.error=Could not transfer artifact org.apache.mina\:mina-core\:pom\:2.0.4 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1437385590615
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437386306726
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.mina\:mina-core\:pom\:2.0.4 from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437386316870
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.apache.mina\:mina-core\:pom\:2.0.4 from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437385591119
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1437385590063
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1437385592449
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.mina\:mina-core\:pom\:2.0.4 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437386326876
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437386296643

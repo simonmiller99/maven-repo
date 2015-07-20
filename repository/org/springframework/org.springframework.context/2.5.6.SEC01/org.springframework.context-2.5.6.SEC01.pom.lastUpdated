@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri May 29 18:13:53 BST 2015
+http\://repo1.maven.org/eclipse/.error=
+http\://repo1.maven.org/eclipse/.lastUpdated=1432919632829
+http\://repository.springsource.com/maven/bundles/external/.error=
+https\://build.shibboleth.net/nexus/content/groups/public/.lastUpdated=1432919632762
+https\://repo.maven.apache.org/maven2/.lastUpdated=1432919632791
+https\://repo.maven.apache.org/maven2/.error=
+https\://build.shibboleth.net/nexus/content/groups/public/.error=
+http\://repository.springsource.com/maven/bundles/external/.lastUpdated=1432919632957
+http\://repository.springsource.com/maven/bundles/release/.lastUpdated=1432919633588

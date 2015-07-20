@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jun 03 09:45:12 BST 2015
+http\://maven.repository.redhat.com/earlyaccess/all/.error=Could not transfer artifact org.jboss.spec\:jboss-javaee-6.0\:pom\:3.0.2.Final-redhat-13 from/to jboss-earlyaccess-repository (http\://maven.repository.redhat.com/earlyaccess/all/)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/2.23.198.29] failed\: Connection timed out\: connect
+@default-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1433321070297
+@default-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1433321091312
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.jboss.spec\:jboss-javaee-6.0\:pom\:3.0.2.Final-redhat-13 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/2.23.198.29] failed\: Connection timed out\: connect
+@default-https\://repo.maven.apache.org/maven2/.lastUpdated=1433321112621
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.jboss.spec\:jboss-javaee-6.0\:pom\:3.0.2.Final-redhat-13 from/to central (https\://repo.maven.apache.org/maven2)\: Connect to repo.maven.apache.org\:443 [repo.maven.apache.org/185.31.19.215] failed\: Connection timed out\: connect

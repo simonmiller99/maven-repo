@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:21:43 BST 2015
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1436527310269
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436527300247
+@default-http\://dt1devsvn001\:8080/archiva/repository/internal/.lastUpdated=1434624214570
+http\://dt1devsvn001\:8080/archiva/repository/internal/.error=Could not transfer artifact org.codehaus.plexus\:plexus-compiler-manager\:pom\:2.2 from/to central (http\://dt1devsvn001\:8080/archiva/repository/internal/)\: dt1devsvn001
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384102968
+https\://repo.maven.apache.org/maven2/.lastUpdated=1437384103536
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1437384103375
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

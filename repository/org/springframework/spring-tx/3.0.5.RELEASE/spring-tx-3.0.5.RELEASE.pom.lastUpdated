@@ -1,0 +1,36 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:22:45 BST 2015
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to mapfishrepository (http\://dev.mapfish.org/maven/repository)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1437384163883
+http\://repository.codehaus.org/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to Codehaus (http\://repository.codehaus.org/)\: connect timed out
+http\://maven.springframework.org/external/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to spring external (http\://maven.springframework.org/external/)\: connect timed out
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1437384161985
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437381341472
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.restlet.com/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to mvnrestletcom (http\://maven.restlet.com/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+@default-java.net\ repo-http\://download.java.net/maven/2/.lastUpdated=1437381361739
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437381311237
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1437384161495
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to java.net repo (http\://download.java.net/maven/2/)\: connect timed out
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1437384163633
+@default-Codehaus-http\://repository.codehaus.org/.lastUpdated=1437381391809
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437381331462
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384162345
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+@default-spring\ release-http\://maven.springframework.org/release/.lastUpdated=1437381371789
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+@default-spring\ external-http\://maven.springframework.org/external/.lastUpdated=1437381381797
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437381321280
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437381301229
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437384164274
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1437384163170
+@default-maven\ central\ repo-http\://repo1.maven.org/maven2/.lastUpdated=1437381351544
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to mvnrepositoryrepository (http\://mvnrepository.com/artifact/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to maven central repo (http\://repo1.maven.org/maven2/)\: connect timed out
+https\://repo1.maven.org/maven2/.lastUpdated=1437384165158
+http\://maven.springframework.org/release/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to spring release (http\://maven.springframework.org/release/)\: connect timed out
+https\://maven-repository.com/.error=Could not transfer artifact org.springframework\:spring-tx\:pom\:3.0.5.RELEASE from/to maven-repository.com (https\://maven-repository.com)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1437384163406

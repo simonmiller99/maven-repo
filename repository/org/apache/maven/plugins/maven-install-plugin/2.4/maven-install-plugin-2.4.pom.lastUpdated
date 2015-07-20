@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jul 09 15:35:01 BST 2015
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436452501280
+@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436452459021
+http\://maven.repository.redhat.com/earlyaccess/all/.error=Could not transfer artifact org.apache.maven.plugins\:maven-install-plugin\:pom\:2.4 from/to jboss-earlyaccess-plugin-repository (http\://maven.repository.redhat.com/earlyaccess/all/)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/104.70.233.123] failed\: Connection timed out\: connect
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436452501141
+@default-jboss-earlyaccess-plugin-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436452480051
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.plugins\:maven-install-plugin\:pom\:2.4 from/to jboss-ga-plugin-repository (http\://maven.repository.redhat.com/techpreview/all)\: Connect to maven.repository.redhat.com\:80 [maven.repository.redhat.com/104.70.233.123] failed\: Connection timed out\: connect

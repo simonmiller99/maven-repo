@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 14:27:47 BST 2015
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436534867883
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436534857818
+https\://maven-repository.com/.error=Could not transfer artifact commons-lang\:commons-lang\:jar\:sources\:2.6 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact commons-lang\:commons-lang\:jar\:sources\:2.6 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436534847847
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact commons-lang\:commons-lang\:jar\:sources\:2.6 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out

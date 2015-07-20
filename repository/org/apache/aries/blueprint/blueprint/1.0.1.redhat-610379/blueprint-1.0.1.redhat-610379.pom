@@ -1,0 +1,272 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>org.apache.aries</groupId>
+        <artifactId>java5-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath />
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.apache.aries.blueprint</groupId>
+    <artifactId>blueprint</artifactId>
+    <name>Apache Aries Blueprint</name>
+    <packaging>pom</packaging>
+    <version>1.0.1.redhat-610379</version>
+
+    <description>
+        Implementation of the Blueprint Container Specification
+    </description>
+
+    <modules>
+        <module>blueprint-api</module>
+        <module>blueprint-parser</module>
+        <module>blueprint-core</module>
+        <module>blueprint-cm</module>
+        <module>blueprint-bundle</module>
+        <module>blueprint-compatibility</module>
+        <module>blueprint-core-compatibility</module>
+        <module>blueprint-noosgi</module>
+        <module>blueprint-web</module>
+        <module>blueprint-jexl-evaluator</module>
+        <module>blueprint-sample</module>
+        <module>blueprint-annotation-api</module>
+        <module>blueprint-annotation-impl</module>
+        <module>blueprint-sample-annotation</module>
+        <module>blueprint-sample-fragment</module>
+        <module>blueprint-sample-war</module>
+        <module>blueprint-testbundlea</module>
+        <module>blueprint-testbundleb</module>
+        <module>blueprint-testquiescebundle</module>
+        <module>blueprint-itests</module>
+        <module>blueprint-annotation-itest</module>
+    </modules>
+
+	<distributionManagement>
+		<repository>
+			<id>fusesource-nexus-staging</id>
+			<name>FuseSource Release Repository</name>
+			<url>http://repo.fusesource.com/nexus/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>fusesource-nexus-snapshots</id>
+			<name>FuseSource Nexus Snapshots</name>
+			<url>http://repo.fusesource.com/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<scm>
+		<connection>scm:git:git://forge.fusesource.com/aries.git</connection>
+		<developerConnection>scm:git:ssh://git@forge.fusesource.com/aries.git</developerConnection>
+	</scm>
+           
+  <properties> 
+	  <felix.bundleplugin.version>2.3.4</felix.bundleplugin.version>
+
+    <!-- adding these version properties for Perfectus to replace at release time -->
+    <aries.proxy.api.version>1.0.1.redhat-610379</aries.proxy.api.version>
+    <aries.proxy.version>1.0.1.redhat-610379</aries.proxy.version>
+    <aries.util.version>1.0.1.redhat-610379</aries.util.version>
+  </properties>
+
+  <build> 
+	  <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <showDeprecation>false</showDeprecation>
+            </configuration>
+          </plugin>
+          <plugin> 
+	        <groupId>org.apache.felix</groupId>
+	        <artifactId>maven-bundle-plugin</artifactId>
+	        <version>${felix.bundleplugin.version}</version>
+          </plugin>
+	  </plugins>
+  </build>
+
+  <profiles>
+
+    <!--
+      Run the release /w the -P release flag to enable the release profile.
+    -->
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+
+          <!-- We want to sign the artifact, the POM, and all attached artifacts -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <configuration>
+              <passphrase>${gpg.passphrase}</passphrase>
+            </configuration>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+
+            <configuration>
+              <encoding>${project.build.sourceEncoding}</encoding>
+            </configuration>
+
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <id>enforce-no-snapshots</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+              <execution>
+                <id>enforce-no-snapshots</id>
+                <goals><goal>enforce</goal></goals>
+                <configuration>
+                  <rules>
+                    <requireReleaseVersion>
+                      <message>No Snapshots Allowed!</message>
+                    </requireReleaseVersion>                
+                    <requireReleaseDeps>
+                      <message>No Snapshots Allowed!</message>
+                    </requireReleaseDeps>
+                  </rules>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile> 
+
+    <!-- enables downloading from fusesource public repositories -->
+    <profile>
+      <id>download</id>
+      <repositories>
+        <repository>
+          <id>fusesource-releases</id>
+          <name>FuseSource Release Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+        <repository>
+          <id>fusesource-snapshots</id>
+          <name>FuseSource Snapshot Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/public-snapshots</url>
+          <releases><enabled>false</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>fusesource-releases</id>
+          <name>FuseSource Release Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>false</enabled></snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>fusesource-snapshots</id>
+          <name>FuseSource Snapshot Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/public-snapshots</url>
+          <releases><enabled>false</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>  
+
+    <!-- enables the fusesource maven proxy repositories -->
+    <profile>
+      <id>fusesource-proxy</id>
+      <repositories>
+        <repository>
+          <id>fusesource-proxy</id>
+          <name>FuseSource Proxy Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/m2-proxy</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>fusesource-proxy</id>
+          <name>FuseSource Proxy Repository</name>
+          <url>http://repo.fusesource.com/nexus/content/groups/m2-proxy</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>  
+
+    <!--
+      To generate a graph of the project dependencies, run: mvn -P graph
+      graph:project
+    -->
+    <profile>
+      <id>graph</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.fusesource.mvnplugins</groupId>
+            <artifactId>maven-graph-plugin</artifactId>
+            <version>1.15</version>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>    
+
+  </profiles>
+
+</project>
+

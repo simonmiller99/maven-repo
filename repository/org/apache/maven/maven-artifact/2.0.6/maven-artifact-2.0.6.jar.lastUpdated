@@ -1,0 +1,10 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 12:01:47 BST 2015
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436448127581
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436526102022
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1436526107813
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436526099291
+http\://maven.repository.redhat.com/techpreview/all/.error=
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1436448287990
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven\:maven-artifact\:jar\:2.0.6 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out

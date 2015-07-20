@@ -1,0 +1,831 @@
+<repository lastmodified='20150720114456.302'>
+  <resource id='net.atos.csms.core.csms-activemq-plugin/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-activemq-plugin' presentationname='csms-activemq-plugin' uri='net/atos/csms/core/csms-activemq-plugin/0.0.14-SNAPSHOT/csms-activemq-plugin-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>27631</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-activemq-plugin'/>
+      <p n='presentationname' v='csms-activemq-plugin'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.plugins.activemq.auditplugin'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.event.model,org.apache.activemq.command,net.atos.csms.core.common.types,org.apache.activemq.broker,net.atos.csms.plugins.activemq.auditplugin.generator,net.atos.csms.plugins.activemq.auditplugin.util,net.atos.csms.core.event.auditors,org.apache.activemq.broker.region'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.plugins.activemq.auditplugin.generator'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,org.apache.activemq,net.atos.csms.core.common.util,javax.jms,org.apache.activemq.command,net.atos.csms.core.event.model,net.atos.csms.core.common.types,org.apache.activemq.broker,net.atos.csms.core.common.constants,org.apache.activemq.broker.region,net.atos.csms.core.event.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.plugins.activemq.auditplugin.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.constants,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.plugins.activemq.security'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,javax.naming,net.atos.csms.core.common.util.ldap,org.apache.activemq.command,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,javax.naming.ldap,org.apache.activemq.security'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.plugins.activemq.sslplugin'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types,org.apache.activemq.broker,net.atos.csms.core.common.util.ldap.pki,org.slf4j,javax.naming,org.apache.activemq.command,javax.net.ssl'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.jms)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.jms;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.net.ssl))' extend='false' multiple='false' optional='false'>Import package javax.net.ssl</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap.pki)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap.pki;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.broker))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.broker</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.broker.region))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.broker.region</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.command))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.command</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.security))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.security</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.cglib))' extend='false' multiple='false' optional='false'>Import package org.springframework.cglib</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-audit-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-audit-service' presentationname='csms-audit-service' uri='net/atos/csms/core/csms-audit-service/0.0.14-SNAPSHOT/csms-audit-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>31989</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-audit-service'/>
+      <p n='presentationname' v='csms-audit-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.ws.rs,net.atos.csms.core.services.audit.model,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,javax.ws.rs.core'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.dao'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.audit.model'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.audit.model,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.json'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,org.codehaus.jackson.map,org.codehaus.jackson'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation.adapters,javax.xml.bind.annotation,net.atos.csms.core.common.util.jaxb,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.audit.validation'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.audit.model'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.base)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.base;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation.adapters))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation.adapters</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.authorisation)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.authorisation;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxb)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxb;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.api))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.api</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.dao))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.dao</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.delegate))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.delegate</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.model))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.model</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.types))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.types</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.audit.validation))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.audit.validation</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.dbcp))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.dbcp</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.map)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.map;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.type)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.type;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.core))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.core</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.core.namedparam))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.core.namedparam</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-billing-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-billing-service' presentationname='csms-billing-service' uri='net/atos/csms/core/csms-billing-service/0.0.14-SNAPSHOT/csms-billing-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>36867</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-billing-service'/>
+      <p n='presentationname' v='csms-billing-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.billing.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.ws.rs,net.atos.csms.core.services.billing.model,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,javax.ws.rs.core'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.billing.dao'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.billing.model,net.atos.csms.core.services.exceptions'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.billing.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.billing.model,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.billing.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,net.atos.csms.core.common.util.jaxb'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.annotation.security)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.annotation.security;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation.adapters))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation.adapters</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.authorisation)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.authorisation;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxb)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxb;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.billing.api))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.billing.api</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.billing.dao))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.billing.dao</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.billing.delegate))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.billing.delegate</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.billing.model))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.billing.model</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.dbcp))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.dbcp</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.core))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.core</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+  </resource>
+  <resource id='csms-billingrouter-service/0.0.14.SNAPSHOT' symbolicname='csms-billingrouter-service' presentationname='csms-billingrouter-service' uri='net/atos/csms/core/csms-billingrouter-service/0.0.14-SNAPSHOT/csms-billingrouter-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>4362</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='csms-billingrouter-service'/>
+      <p n='presentationname' v='csms-billingrouter-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.jms)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.jms;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.camel.component)(version&gt;=5.9.0)(!(version&gt;=6.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.camel.component;version="[5.9,6)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.pool))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.pool</require>
+    <require name='package' filter='(&amp;(package=org.apache.camel.blueprint)(version&gt;=2.12.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.camel.blueprint;version="[2.12.0,3)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.blueprint)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.blueprint;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.4,2)"</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-core-common/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-core-common' presentationname='csms-core-common' uri='net/atos/csms/core/csms-core-common/0.0.14-SNAPSHOT/csms-core-common-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>115767</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-core-common'/>
+      <p n='presentationname' v='csms-core-common'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.authorisation'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.common.util,net.atos.csms.core.common.model,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.types,javax.annotation.security'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.constants'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types,javax.xml.bind.annotation,org.apache.commons.lang'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.model,javax.xml.bind.annotation.adapters,net.atos.csms.core.common.util.jaxb,com.google.common.base'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,javax.naming,org.apache.cxf.jaxrs.model,javax.ws.rs.ext,net.atos.csms.core.common.util.jaxrs,net.atos.csms.core.common.util.ldap,javax.ws.rs.core,org.apache.cxf.configuration.security,net.atos.csms.core.common.types,org.apache.cxf.message,net.atos.csms.core.common.constants,net.atos.csms.core.common.util.ldap.pki,javax.naming.directory,net.atos.csms.core.common.model,javax.naming.ldap,net.atos.csms.core.services.exceptions,org.springframework.security.ldap.ppolicy,org.apache.cxf.jaxrs.ext,org.apache.commons.lang,org.apache.commons.codec.binary,com.google.common.base,com.google.common.collect,org.springframework.context.support,org.apache.commons.beanutils'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util.jaxb'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation.adapters,org.slf4j,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util.jaxrs'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.codehaus.jackson.node,org.slf4j,org.codehaus.jackson.map,net.atos.csms.core.services.exceptions,javax.ws.rs.ext,javax.ws.rs.core,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util.json'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.codehaus.jackson.map,org.codehaus.jackson.xc,org.codehaus.jackson.map.annotate,org.codehaus.jackson.jaxrs,org.codehaus.jackson,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util.ldap'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.constants,org.slf4j,javax.naming.directory,javax.naming.ldap,javax.naming,org.apache.commons.codec.binary,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.types,com.google.common.base,com.google.common.collect,org.springframework.jndi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.common.util.ldap.pki'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,javax.naming,net.atos.csms.core.common.util.ldap,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,javax.naming.directory,javax.naming.ldap,org.apache.commons.codec.binary,javax.net.ssl'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.exceptions'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.base)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.base;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.annotation.security)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.annotation.security;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.net.ssl))' extend='false' multiple='false' optional='false'>Import package javax.net.ssl</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.ext)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.ext;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation.adapters))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation.adapters</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.beanutils))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.beanutils</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.codec.binary)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.codec.binary;version="[1.6,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang;version="[2.5,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.configuration.security)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.configuration.security;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.message)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.message;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.map)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.map;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.map.annotate)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.map.annotate;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.node)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.node;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.xc)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.xc;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.context.support))' extend='false' multiple='false' optional='false'>Import package org.springframework.context.support</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+    <require name='package' filter='(&amp;(package=org.springframework.security.ldap.ppolicy)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.security.ldap.ppolicy;version="[3.1,4)"</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-core-dependencies/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-core-dependencies' presentationname='csms-core-dependencies' uri='net/atos/csms/core/csms-core-dependencies/0.0.14-SNAPSHOT/csms-core-dependencies-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <description>Container for third-party libraries that cannot be auto-wrapped in Fuse</description>
+    <size>269196</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-core-dependencies'/>
+      <p n='presentationname' v='csms-core-dependencies'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='netscape.ldap.ber.stream'/>
+      <p n='version' t='version' v='4.1.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.net))' extend='false' multiple='false' optional='false'>Import package javax.net</require>
+    <require name='package' filter='(&amp;(package=javax.net.ssl))' extend='false' multiple='false' optional='false'>Import package javax.net.ssl</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.callback))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.callback</require>
+    <require name='package' filter='(&amp;(package=netscape.ldap.ber.stream)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' extend='false' multiple='false' optional='false'>Import package netscape.ldap.ber.stream;version="[4.1,5)"</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-environment-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-environment-service' presentationname='csms-environment-service' uri='net/atos/csms/core/csms-environment-service/0.0.14-SNAPSHOT/csms-environment-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>322223</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-environment-service'/>
+      <p n='presentationname' v='csms-environment-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.ws.rs,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,net.atos.csms.core.services.environment.model,javax.ws.rs.core,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.exceptions,net.atos.csms.core.services.environment.model,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.types,net.atos.csms.core.common.constants,org.slf4j,net.atos.csms.core.common.types,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.model,net.atos.csms.core.services.environment.fabric.jmx'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.exception'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.executor'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.types,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.model,javax.xml.bind.annotation'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.facets.define'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric,net.atos.csms.core.services.environment.fabric.model,net.atos.csms.core.services.user.delegate,net.atos.csms.core.services.environment.fabric.management.ports,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.model,net.atos.csms.core.services.environment.fabric.facets.resources,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,org.slf4j,javax.naming.ldap,javax.naming,net.atos.csms.core.common.util.ldap,org.springframework.jndi,net.atos.csms.core.services.environment.fabric.types,net.atos.csms.core.common.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.facets.discover'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric,net.atos.csms.core.services.environment.fabric.model,net.atos.csms.core.services.user.delegate,net.atos.csms.core.services.environment.fabric.management.ports,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.fabric.facets.resources,net.atos.csms.core.common.types,net.atos.csms.core.services.environment.model,net.atos.csms.core.services.environment.fabric.types,org.slf4j,net.atos.csms.core.common.util.ldap,net.atos.csms.core.common.constants,javax.naming.ldap,org.springframework.jndi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.facets.provision'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.services.environment.types,net.atos.csms.core.services.environment.fabric.facets.resolve,net.atos.csms.core.services.environment.fabric.facets.resources,net.atos.csms.core.services.environment.fabric.facets.discover,com.google.common.collect,net.atos.csms.core.services.environment.fabric.facets.define,net.atos.csms.core.services.environment.fabric,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.facets.resolve'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.fabric.facets.resources,com.google.common.collect'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.facets.resources'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric,net.atos.csms.core.services.environment.fabric.model,net.atos.csms.core.services.environment.fabric.management.ports,net.atos.csms.core.common.types,org.slf4j,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.fabric.types,com.google.common.collect,net.atos.csms.core.common.util,net.atos.csms.core.services.environment.model,org.apache.commons.lang,net.atos.csms.core.services.user.delegate,net.atos.csms.core.services.exceptions,net.atos.csms.core.services.user.model'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.model,net.atos.csms.core.services.environment.fabric.types,net.atos.csms.core.common.types,net.atos.csms.core.services.environment.fabric,org.slf4j,org.codehaus.jackson.map,org.codehaus.jackson,net.atos.csms.core.services.environment.fabric.ssh,net.atos.csms.core.services.environment.fabric.jmx.jolokia,net.atos.csms.core.services.environment.fabric.jmx.types,net.atos.csms.core.services.environment.fabric.jmx.model,net.atos.csms.core.services.environment.fabric.jmx.exception,net.atos.csms.core.services.environment.fabric.model,net.atos.csms.core.services.environment.fabric.jmx.invoker,net.atos.csms.core.services.environment.fabric.jmx.marshal,com.google.common.collect'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.exception'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.invoker'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.jmx.exception'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.jolokia'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,org.apache.commons.httpclient.auth,org.apache.commons.io,org.apache.commons.httpclient,net.atos.csms.core.services.environment.fabric.jmx.model,net.atos.csms.core.services.environment.fabric.jmx.exception,org.apache.commons.httpclient.params,org.apache.commons.httpclient.methods,net.atos.csms.core.services.environment.fabric.jmx.invoker,org.codehaus.jackson.map,org.codehaus.jackson,net.atos.csms.core.services.environment.fabric.jmx.marshal,net.atos.csms.core.services.environment.fabric.jmx.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.marshal'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.jmx.model'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.jmx.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.jmx.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.management.ports'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.fabric.model,net.atos.csms.core.services.environment.fabric.exception,net.atos.csms.core.services.environment.fabric.types,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types,net.atos.csms.core.services.environment.fabric.util,net.atos.csms.core.services.environment.fabric.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.ssh'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,org.apache.sshd.client.future,org.apache.sshd.common.future,org.apache.sshd,org.apache.sshd.client.channel,org.apache.commons.io,net.atos.csms.core.services.environment.fabric.model,org.apache.commons.lang'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.fabric.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.marshal'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.constants,javax.naming.directory,net.atos.csms.core.common.util.ldap,net.atos.csms.core.services.environment.model,com.google.common.collect,net.atos.csms.core.common.types,javax.naming,net.atos.csms.core.services.environment.types,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation,net.atos.csms.core.common.types,javax.xml.bind.annotation.adapters,net.atos.csms.core.common.util.jaxb,net.atos.csms.core.services.environment.types,org.apache.commons.lang,net.atos.csms.core.services.environment.fabric.types,com.google.common.base'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.environment.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.environment.types,net.atos.csms.core.services.environment.model'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.base)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.base;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.annotation.security)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.annotation.security;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation.adapters))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation.adapters</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.authorisation)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.authorisation;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxb)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxb;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.api))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.api</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.delegate))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.delegate</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.exception))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.exception</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.executor))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.executor</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.facets.resources))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.facets.resources</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.management.ports))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.management.ports</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.model))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.model</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.types))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.types</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.marshal))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.marshal</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.model))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.model</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.types))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.types</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.util))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.util</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.user.delegate)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.user.delegate;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.user.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.user.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.aopalliance.aop))' extend='false' multiple='false' optional='false'>Import package org.aopalliance.aop</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.dbcp))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.dbcp</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient.auth)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient.auth;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient.methods)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient.methods;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient.params)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient.params;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang;version="[2.6,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sshd)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sshd;version="[0.9,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sshd.client.channel)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sshd.client.channel;version="[0.9,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sshd.client.future)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sshd.client.future;version="[0.9,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.sshd.common.future)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.sshd.common.future;version="[0.9,1)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.map)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.map;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.aop))' extend='false' multiple='false' optional='false'>Import package org.springframework.aop</require>
+    <require name='package' filter='(&amp;(package=org.springframework.aop.framework))' extend='false' multiple='false' optional='false'>Import package org.springframework.aop.framework</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.config))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.config</require>
+    <require name='package' filter='(&amp;(package=org.springframework.context))' extend='false' multiple='false' optional='false'>Import package org.springframework.context</require>
+    <require name='package' filter='(&amp;(package=org.springframework.core.task))' extend='false' multiple='false' optional='false'>Import package org.springframework.core.task</require>
+    <require name='package' filter='(&amp;(package=org.springframework.dao))' extend='false' multiple='false' optional='false'>Import package org.springframework.dao</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.core))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.core</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.datasource))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.datasource</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jdbc.support))' extend='false' multiple='false' optional='false'>Import package org.springframework.jdbc.support</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+    <require name='package' filter='(&amp;(package=org.springframework.scheduling.concurrent))' extend='false' multiple='false' optional='false'>Import package org.springframework.scheduling.concurrent</require>
+    <require name='package' filter='(&amp;(package=org.springframework.transaction.annotation))' extend='false' multiple='false' optional='false'>Import package org.springframework.transaction.annotation</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-event-common-api/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-event-common-api' presentationname='csms-event-common-api' uri='net/atos/csms/core/csms-event-common-api/0.0.14-SNAPSHOT/csms-event-common-api-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>27808</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-event-common-api'/>
+      <p n='presentationname' v='csms-event-common-api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.event.auditors'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.event.model,org.slf4j,net.atos.csms.core.event.sender'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.event.json'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.codehaus.jackson.map,net.atos.csms.core.event.model'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.event.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.event.sender'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.event.model,org.springframework.jms.core,org.slf4j,org.springframework.jms,net.atos.csms.core.event.json,org.springframework.scheduling.concurrent'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.event.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.naming,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,org.slf4j,javax.naming.ldap,net.atos.csms.core.common.util.ldap,net.atos.csms.core.event.model,org.codehaus.jackson.type,org.codehaus.jackson.map,org.apache.cxf.jaxrs.model,javax.ws.rs.ext,javax.ws.rs.core,org.apache.cxf.message,net.atos.csms.core.common.model,org.apache.cxf.jaxrs.impl,net.atos.csms.core.event.auditors,org.apache.cxf.jaxrs.ext,net.atos.csms.core.event.sender'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.ext)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.ext;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq.pool))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq.pool</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.impl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.impl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.message)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.message;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.map)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.map;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.type)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.type;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jms))' extend='false' multiple='false' optional='false'>Import package org.springframework.jms</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jms.core))' extend='false' multiple='false' optional='false'>Import package org.springframework.jms.core</require>
+    <require name='package' filter='(&amp;(package=org.springframework.scheduling.concurrent))' extend='false' multiple='false' optional='false'>Import package org.springframework.scheduling.concurrent</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-ftp-server/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-ftp-server' presentationname='csms-ftp-server' uri='net/atos/csms/core/csms-ftp-server/0.0.14-SNAPSHOT/csms-ftp-server-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>51799</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-ftp-server'/>
+      <p n='presentationname' v='csms-ftp-server'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.ftpserver'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.util.ldap.pki,org.apache.ftpserver,org.slf4j,org.apache.ftpserver.usermanager,net.atos.csms.ftpserver.security,org.apache.ftpserver.ftplet,org.apache.ftpserver.usermanager.impl,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.ftpserver.audit.generators'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.apache.ftpserver.impl,org.slf4j,net.atos.csms.core.event.model,org.apache.commons.io,net.atos.csms.core.common.types,net.atos.csms.core.event.util,org.apache.ftpserver.ftplet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.ftpserver.command'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.apache.ftpserver.impl,org.slf4j,org.apache.mina.core.future,org.apache.commons.io,org.apache.ftpserver.command,org.apache.ftpserver.ftplet,net.atos.csms.ftpserver,net.atos.csms.ftpserver.audit.generators,net.atos.csms.core.event.auditors,org.apache.ftpserver.listener,net.atos.csms.ftpserver.security,net.atos.csms.core.event.model,net.atos.csms.core.common.types,org.apache.ftpserver.command.impl.listing,org.apache.ftpserver.command.impl'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.ftpserver.security'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.apache.ftpserver.usermanager,org.apache.ftpserver.ftplet,org.slf4j,net.atos.csms.ftpserver,net.atos.csms.ftpserver.audit.generators,javax.naming,net.atos.csms.core.common.util.ldap,net.atos.csms.core.event.model,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,net.atos.csms.core.common.util.ldap.pki,javax.naming.directory,javax.naming.ldap,net.atos.csms.core.event.auditors,org.apache.ftpserver.usermanager.impl,org.springframework.jndi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.ftpserver.status'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,org.apache.commons.io,com.google.common.collect'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap.pki)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap.pki;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.sender)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.sender;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.command)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.command;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.command.impl))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.command.impl</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.command.impl.listing))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.command.impl.listing</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.ftplet)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.ftplet;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.impl))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.impl</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.listener)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.listener;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.ssl)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.ssl;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.usermanager)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.usermanager;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.ftpserver.usermanager.impl))' extend='false' multiple='false' optional='false'>Import package org.apache.ftpserver.usermanager.impl</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.mina.core.future)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.mina.core.future;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jmx.export))' extend='false' multiple='false' optional='false'>Import package org.springframework.jmx.export</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-message-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-message-service' presentationname='csms-message-service' uri='net/atos/csms/core/csms-message-service/0.0.14-SNAPSHOT/csms-message-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>33073</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-message-service'/>
+      <p n='presentationname' v='csms-message-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.message.activemq'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.message.model,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.types,org.apache.activemq,org.slf4j,net.atos.csms.core.services.message.marshal,net.atos.csms.core.common.model,javax.jms'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.message.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.apache.cxf.jaxrs.ext.multipart,javax.ws.rs,net.atos.csms.core.services.message.model,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,javax.ws.rs.core,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.message.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.message.model,net.atos.csms.core.services.exceptions,javax.ws.rs.core,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.message.marshal'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.services.message.model,javax.jms'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.message.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation,javax.jms,net.atos.csms.core.common.types'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.jms)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.jms;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.authorisation)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.authorisation;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.message.activemq))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.message.activemq</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.message.api))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.message.api</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.message.delegate))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.message.delegate</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.message.model))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.message.model</require>
+    <require name='package' filter='(&amp;(package=org.apache.activemq))' extend='false' multiple='false' optional='false'>Import package org.apache.activemq</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext.multipart)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext.multipart;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-status-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-status-service' presentationname='csms-status-service' uri='net/atos/csms/core/csms-status-service/0.0.14-SNAPSHOT/csms-status-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>17187</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-status-service'/>
+      <p n='presentationname' v='csms-status-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.status.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.ws.rs,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,net.atos.csms.core.services.environment.model,javax.ws.rs.core'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.status.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.exceptions,net.atos.csms.core.services.environment.model,net.atos.csms.core.common.types'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=18.0.0)(!(version&gt;=19.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[18.0,19)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.delegate)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.delegate;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.fabric.exception)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.fabric.exception;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.environment.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.environment.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.status.api))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.status.api</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.status.delegate))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.status.delegate</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+  </resource>
+  <resource id='net.atos.csms.core.csms-user-service/0.0.14.SNAPSHOT' symbolicname='net.atos.csms.core.csms-user-service' presentationname='csms-user-service' uri='net/atos/csms/core/csms-user-service/0.0.14-SNAPSHOT/csms-user-service-0.0.14-SNAPSHOT.jar' version='0.0.14.SNAPSHOT'>
+    <size>64612</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.atos.csms.core.csms-user-service'/>
+      <p n='presentationname' v='csms-user-service'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.delegate.impl'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='org.slf4j,net.atos.csms.core.services.user.util.impl,javax.naming,javax.naming.directory,net.atos.csms.core.common.model,javax.naming.ldap,org.apache.commons.codec.binary,org.apache.commons.lang,org.springframework.jndi,net.atos.csms.core.services.user.types,net.atos.csms.core.common.util,net.atos.csms.core.common.util.ldap,net.atos.csms.core.common.types,javax.annotation.security,net.atos.csms.core.common.constants,net.atos.csms.core.services.user.delegate,net.atos.csms.core.services.user.api.impl,net.atos.csms.core.services.exceptions,net.atos.csms.core.services.user.model,net.atos.csms.core.services.user.marshal'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.api'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.ws.rs,org.apache.cxf.jaxrs.model.wadl,net.atos.csms.core.services.exceptions,org.apache.cxf.jaxrs.ext,net.atos.csms.core.services.user.model,javax.ws.rs.core'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.types'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.util.impl'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.naming.directory,javax.naming.ldap,javax.naming,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.util.ldap,net.atos.csms.core.services.user.model,net.atos.csms.core.services.user.marshal,net.atos.csms.core.common.types,net.atos.csms.core.common.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.delegate'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.services.exceptions,net.atos.csms.core.services.user.model,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.api.impl'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.types,org.slf4j,net.atos.csms.core.common.model,net.atos.csms.core.common.authorisation,net.atos.csms.core.services.exceptions,net.atos.csms.core.services.user.model,net.atos.csms.core.common.util.ldap,net.atos.csms.core.services.user.api,net.atos.csms.core.common.util,net.atos.csms.core.services.user.delegate,org.apache.cxf.jaxrs.ext,javax.ws.rs.core'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.util'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='net.atos.csms.core.common.model,net.atos.csms.core.services.exceptions,net.atos.csms.core.common.util.ldap,net.atos.csms.core.common.types'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.model'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.xml.bind.annotation,net.atos.csms.core.services.user.types,org.slf4j,net.atos.csms.core.common.types,org.apache.commons.lang'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.atos.csms.core.services.user.marshal'/>
+      <p n='version' t='version' v='0.0.14.SNAPSHOT'/>
+      <p n='uses:' v='javax.naming.directory,net.atos.csms.core.services.user.types,net.atos.csms.core.common.util.ldap,net.atos.csms.core.services.user.model,net.atos.csms.core.common.types,net.atos.csms.core.common.constants,javax.naming'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.annotation.security)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.annotation.security;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.ldap))' extend='false' multiple='false' optional='false'>Import package javax.naming.ldap</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.0,3)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.authorisation)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.authorisation;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.constants)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.constants;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.model)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.model;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.types)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.types;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.jaxrs)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.jaxrs;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.json)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.json;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.common.util.ldap)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.common.util.ldap;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.auditors)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.auditors;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.event.util)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.event.util;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=net.atos.csms.core.services.exceptions)(!(version&gt;=1.0.0)))' extend='false' multiple='false' optional='false'>Import package net.atos.csms.core.services.exceptions;version="[0.0,1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.codec.binary)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.codec.binary;version="[1.6,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang;version="[2.6,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.ext)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.ext;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.cxf.jaxrs.model.wadl)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.cxf.jaxrs.model.wadl;version="[2.7,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.karaf.jaas.boot.principal)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.karaf.jaas.boot.principal;version="[2.3,3)"</require>
+    <require name='package' filter='(&amp;(package=org.codehaus.jackson.jaxrs)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.codehaus.jackson.jaxrs;version="[1.9,2)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.plus.jaas)(version&gt;=8.1.0)(!(version&gt;=9.0.0)))' extend='false' multiple='false' optional='false'>Import package org.eclipse.jetty.plus.jaas;version="[8.1,9)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.jndi))' extend='false' multiple='false' optional='false'>Import package org.springframework.jndi</require>
+  </resource>
+</repository>

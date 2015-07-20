@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri May 29 20:40:48 BST 2015
+org.eclipse.tycho.embedder.shared-0.22.0.jar>central=
+org.eclipse.tycho.embedder.shared-0.22.0.pom>central=

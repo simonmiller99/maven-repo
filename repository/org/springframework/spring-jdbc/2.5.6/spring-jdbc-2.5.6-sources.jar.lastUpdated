@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 05 10:35:48 GMT 2014
+@default-http\://dt1devsvn001\:8080/archiva/repository/internal/.lastUpdated=1417775748469
+http\://dt1devsvn001\:8080/archiva/repository/internal/.error=Could not transfer artifact org.springframework\:spring-jdbc\:jar\:sources\:2.5.6 from/to central (http\://dt1devsvn001\:8080/archiva/repository/internal/)\: dt1devsvn001

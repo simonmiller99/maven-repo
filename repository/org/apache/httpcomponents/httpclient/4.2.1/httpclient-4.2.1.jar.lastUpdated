@@ -1,0 +1,17 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 11:06:55 BST 2015
+https\://maven-repository.com/.error=Could not transfer artifact org.apache.httpcomponents\:httpclient\:jar\:4.2.1 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436945146421
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437386775062
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.httpcomponents\:httpclient\:jar\:4.2.1 from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437386795273
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.apache.httpcomponents\:httpclient\:jar\:4.2.1 from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436945152565
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436945138804
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436945186286
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.httpcomponents\:httpclient\:jar\:4.2.1 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437386815409
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437386754926

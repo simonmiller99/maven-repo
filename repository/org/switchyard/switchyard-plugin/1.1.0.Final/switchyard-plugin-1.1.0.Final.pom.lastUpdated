@@ -1,0 +1,10 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jul 14 08:49:05 BST 2015
+@default-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1433410287453
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436860142735
+@default-https\://repo.maven.apache.org/maven2/.lastUpdated=1433410330252
+@default-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1433410308616
+https\://repo.maven.apache.org/maven2/.lastUpdated=1436860145138
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436860143609
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

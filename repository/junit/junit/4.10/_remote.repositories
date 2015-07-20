@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:26:55 BST 2015
+junit-4.10.pom>central=
+junit-4.10.jar>jboss-earlyaccess-repository=
+junit-4.10.jar>jboss-earlyaccess-plugin-repository=

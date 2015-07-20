@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.glassfish</groupId>
+  <artifactId>javax.el</artifactId>
+  <versioning>
+    <latest>3.0.1-b05</latest>
+    <release>3.0.1-b05</release>
+    <versions>
+      <version>3.0.0</version>
+      <version>3.0.1-b01</version>
+      <version>3.0.1-b02</version>
+      <version>3.0.1-b03</version>
+      <version>3.0.1-b04</version>
+      <version>3.0.1-b05</version>
+    </versions>
+    <lastUpdated>20141220235954</lastUpdated>
+  </versioning>
+</metadata>

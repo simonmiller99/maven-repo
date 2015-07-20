@@ -1,0 +1,18 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 11:27:33 BST 2015
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436451274984
+693f4bb5468f4f1364a9bc05cea51f801321d554@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436522721099
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436451274777
+@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436451232514
+692fbc5e1788b6cde7110f0ebc11b40c832852e4@proxy-de.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436524053075
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436521058360
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436519823323
+651fc211f96b5213c11ca199de6c334805852540@proxy-de.glb.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436521176306
+3a241348fd95daa830ea70265faaca921bcc72aa@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436522823685
+@default-jboss-earlyaccess-plugin-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436451253546
+http\://maven.repository.redhat.com/techpreview/all/.error=
+8738e280f25071699a15f746b3b9bbb292086184@proxy-fr.glb.my-it-solutions.net\:84\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436522710172
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436519824030
+http\://10.22.98.45\:8080/nexus/content/repositories/central/.error=Could not transfer artifact org.apache.maven.plugins\:maven-resources-plugin\:pom\:2.6 from/to ATOS (http\://10.22.98.45\:8080/nexus/content/repositories/central/)\: proxy-de.glb.my-it-solutions.net\:84
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+8738e280f25071699a15f746b3b9bbb292086184@proxy-de.glb.my-it-solutions.net\:84>@default-ATOS-http\://10.22.98.45\:8080/nexus/content/repositories/central/.lastUpdated=1436522669687

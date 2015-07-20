@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:33:12 BST 2015
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384782084
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1437384792133
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.plugins\:maven-resources-plugin\:pom\:2.7 from/to jboss-ga-plugin-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-resources-plugin\:pom\:2.7 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out

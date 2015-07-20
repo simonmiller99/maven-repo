@@ -1,0 +1,19 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:26:44 BST 2015
+https\://repo1.maven.org/maven2/.lastUpdated=1436945204900
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1436945188543
+https\://maven-repository.com/.error=Could not transfer artifact org.springframework\:spring-orm\:jar\:3.0.7.RELEASE from/to maven-repository.com (https\://maven-repository.com)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436945146415
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact org.springframework\:spring-orm\:jar\:3.0.7.RELEASE from/to mvnrepositoryrepository (http\://mvnrepository.com/artifact/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact org.springframework\:spring-orm\:jar\:3.0.7.RELEASE from/to mapfishrepository (http\://dev.mapfish.org/maven/repository)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://maven.restlet.com/.error=Could not transfer artifact org.springframework\:spring-orm\:jar\:3.0.7.RELEASE from/to mvnrestletcom (http\://maven.restlet.com/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436945152562
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436945138777
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436945187467
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1436945190390
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436945186282
+70cb49330ab7c237f629dc3f784bc81ae40e6f35@proxy-de.glb.my-it-solutions.net\:84>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436945191548
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

@@ -1,0 +1,19 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jul 14 08:53:27 BST 2015
+https\://repo1.maven.org/maven2/.lastUpdated=1436860407375
+https\://maven-repository.com/.error=Could not transfer artifact commons-codec\:commons-codec\:pom\:1.5 from/to maven-repository.com (https\://maven-repository.com)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436860404988
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact commons-codec\:commons-codec\:pom\:1.5 from/to mvnrepositoryrepository (http\://mvnrepository.com/artifact/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+651fc211f96b5213c11ca199de6c334805852540@proxy-de.glb.my-it-solutions.net\:84>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436860406563
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact commons-codec\:commons-codec\:pom\:1.5 from/to mapfishrepository (http\://dev.mapfish.org/maven/repository)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+651fc211f96b5213c11ca199de6c334805852540@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1436860407016
+http\://maven.restlet.com/.error=Could not transfer artifact commons-codec\:commons-codec\:pom\:1.5 from/to mvnrestletcom (http\://maven.restlet.com/)\: Not authorized by proxy , ReasonPhrase\:authenticationrequired.
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436860406017
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436860404567
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+651fc211f96b5213c11ca199de6c334805852540@proxy-de.glb.my-it-solutions.net\:84>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436860407234
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436860406361
+651fc211f96b5213c11ca199de6c334805852540@proxy-de.glb.my-it-solutions.net\:84>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1436860406797
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

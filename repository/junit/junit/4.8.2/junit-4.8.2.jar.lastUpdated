@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jul 09 14:19:25 BST 2015
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436447965424
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436447955419
+https\://maven-repository.com/.error=Could not transfer artifact junit\:junit\:jar\:4.8.2 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact junit\:junit\:jar\:4.8.2 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436447945408
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact junit\:junit\:jar\:4.8.2 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: connect timed out

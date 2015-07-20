@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:44:38 BST 2015
+cxf-karaf-commands-3.1.0.jar>=
+cxf-karaf-commands-3.1.0.pom>=

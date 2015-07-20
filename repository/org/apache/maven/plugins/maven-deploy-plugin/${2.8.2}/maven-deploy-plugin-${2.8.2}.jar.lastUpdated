@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 12:28:42 BST 2015
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437391722649
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1437391722652
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.plugins\:maven-deploy-plugin\:jar\:${2.8.2} from/to jboss-ga-plugin-repository (http\://maven.repository.redhat.com/techpreview/all)\: Illegal character in path at index 97\: http\://maven.repository.redhat.com/techpreview/all/org/apache/maven/plugins/maven-deploy-plugin/${2.8.2}/maven-deploy-plugin-${2.8.2}.jar
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-deploy-plugin\:jar\:${2.8.2} from/to central (https\://repo.maven.apache.org/maven2)\: Illegal character in path at index 83\: https\://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/${2.8.2}/maven-deploy-plugin-${2.8.2}.jar

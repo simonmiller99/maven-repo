@@ -1,0 +1,15 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 09:24:24 BST 2015
+https\://maven-repository.com/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.8.3 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436945935508
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436948654313
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+http\://download.java.net/maven/2/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.8.3 from/to java.net (http\://download.java.net/maven/2)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436945936001
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436945935092
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1436948664369
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436945937046
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.8.3 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436948644303

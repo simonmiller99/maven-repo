@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:44:34 BST 2015
+org.apache.cxf.osgi.itests-felix-3.1.0.jar>=
+org.apache.cxf.osgi.itests-felix-3.1.0.pom>=

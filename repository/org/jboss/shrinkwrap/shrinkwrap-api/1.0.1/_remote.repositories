@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:41:10 BST 2015
+shrinkwrap-api-1.0.1.jar>jboss-releases=
+shrinkwrap-api-1.0.1.pom>jboss-releases=

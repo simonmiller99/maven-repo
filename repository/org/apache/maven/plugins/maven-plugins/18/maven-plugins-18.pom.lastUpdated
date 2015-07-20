@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 12:01:16 BST 2015
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436451691365
+@default-jboss-ga-plugin-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436451691050
+@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436451648960
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436526075479
+@default-jboss-earlyaccess-plugin-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436451669991
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1436526076540
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436526076009
+http\://maven.repository.redhat.com/earlyaccess/all/.error=

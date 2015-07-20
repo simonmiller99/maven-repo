@@ -1,0 +1,32 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 10 12:01:27 BST 2015
+http\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://dev.mapfish.org/maven/repository/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.9.2 from/to mapfishrepository (http\://dev.mapfish.org/maven/repository)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+@default-jboss-earlyaccess-repository-http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436453069643
+@default-JBoss\ repository-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1436451412083
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.9.2 from/to JBoss repository (https\://repository.jboss.org/nexus/content/groups/public)\: connect timed out
+@default-mapfish-repository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436453090665
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-mvnrestletcom-http\://maven.restlet.com/.lastUpdated=1436526083751
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436526080457
+http\://repository.jboss.org/nexus/content/repositories/snapshots/.error=
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-mapfishrepository-http\://dev.mapfish.org/maven/repository/.lastUpdated=1436526082751
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436526085608
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://maven.restlet.com/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.9.2 from/to mvnrestletcom (http\://maven.restlet.com/)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+651fc211f96b5213c11ca199de6c334805852540@proxy-apac.my-it-solutions.net\:84>@default-mvnrepositoryrepository-http\://mvnrepository.com/artifact/.lastUpdated=1436526084796
+@default-redhat-techpreview-all-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436453048612
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1436453195893
+http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436526079583
+http\://10.22.98.45\:8080/nexus/content/repositories/public/.lastUpdated=1436453196125
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436526081018
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1436450574637
+@default-mvnrepository-repository-http\://mvnrepository.com/artifact/.lastUpdated=1436453153804
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1436453174873
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1436526081611
+http\://mvnrepository.com/artifact/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.9.2 from/to mvnrepositoryrepository (http\://mvnrepository.com/artifact/)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+https\://repo1.maven.org/maven2/.lastUpdated=1436526087917
+https\://maven-repository.com/.error=Could not transfer artifact commons-beanutils\:commons-beanutils\:pom\:1.9.2 from/to maven-repository.com (https\://maven-repository.com)\: Not authorized by proxy , ReasonPhrase\: authenticationrequired.
+@default-jboss-snapshots-repository-http\://repository.jboss.org/nexus/content/repositories/snapshots/.lastUpdated=1436453027569
+@default-jboss-releases-http\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1436453006554
+@default-http\://maven.restlet.com/-http\://maven.restlet.com/.lastUpdated=1436453132719

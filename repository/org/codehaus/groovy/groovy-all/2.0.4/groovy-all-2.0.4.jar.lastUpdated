@@ -1,0 +1,16 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jul 20 10:23:29 BST 2015
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437383126448
+https\://maven-repository.com/.error=Could not transfer artifact org.codehaus.groovy\:groovy-all\:jar\:2.0.4 from/to maven-repository.com (https\://maven-repository.com)\: connect timed out
+@default-central-https\://repo1.maven.org/maven2/.lastUpdated=1437383667031
+http\://repo.fusesource.com/nexus/content/groups/public/.error=Could not transfer artifact org.codehaus.groovy\:groovy-all\:jar\:2.0.4 from/to fusesource (http\://repo.fusesource.com/nexus/content/groups/public/)\: connect timed out
+@default-fusesource-http\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1437383938960
+https\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=Could not transfer artifact org.codehaus.groovy\:groovy-all\:jar\:2.0.4 from/to fusesourceArch (https\://repository.jboss.org/nexus/content/repositories/fs-releases)\: connect timed out
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1437384048940
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1437384057497
+http\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1437384052304
+http\://maven.repository.redhat.com/earlyaccess/all/.error=
+https\://repo1.maven.org/maven2/.error=Could not transfer artifact org.codehaus.groovy\:groovy-all\:jar\:2.0.4 from/to central (https\://repo1.maven.org/maven2)\: connect timed out
+@default-fusesourceArch-https\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1437384209170
+@default-maven-repository.com-https\://maven-repository.com/.lastUpdated=1437383396626

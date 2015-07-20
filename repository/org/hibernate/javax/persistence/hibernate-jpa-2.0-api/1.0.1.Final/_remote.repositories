@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 15 08:25:38 BST 2015
+hibernate-jpa-2.0-api-1.0.1.Final.jar>jboss-releases=
+hibernate-jpa-2.0-api-1.0.1.Final.pom>jboss-releases=
+hibernate-jpa-2.0-api-1.0.1.Final.pom>shib-release=
+hibernate-jpa-2.0-api-1.0.1.Final.jar>shib-release=

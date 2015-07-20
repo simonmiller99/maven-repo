@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat May 30 17:19:53 BST 2015
+cxf-rt-bindings-xml-3.1.0.pom>=
+cxf-rt-bindings-xml-3.1.0.jar>=

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jboss.as.plugins</groupId>
+  <artifactId>jboss-as-maven-plugin</artifactId>
+  <versioning>
+    <release>7.2.Final</release>
+    <versions>
+      <version>7.2.Final</version>
+    </versions>
+    <lastUpdated>20150714134649</lastUpdated>
+  </versioning>
+</metadata>
